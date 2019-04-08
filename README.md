@@ -7,3 +7,6 @@ Has not had a lot of testing.  A lot of edge cases have not been worked out.  E.
 
 To use you need to enter your BARD folder in the config file or the first textbox.  The config file also has an entry for a Backup folder, where it saves copies of the files before it overwrites the data.
 
+![Alt text](/BTEd/screenshot1.png?raw=true "screenshot1")
+
+![Alt text](/BTEd/screenshot2.png?raw=true "screenshot2")
