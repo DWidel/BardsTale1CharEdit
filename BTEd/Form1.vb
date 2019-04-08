@@ -2,7 +2,7 @@
 
 
     Dim mSelectedChar As clsChar
-
+    'Test Comment
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         If My.Settings.BardsFolder.Trim = "" Then
