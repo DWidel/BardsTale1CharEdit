@@ -1,5 +1,7 @@
 ﻿Public Class clsItem
 
+    'Information about a character's item.
+
     Public ItemNumber As Integer
     Public Equipped As Boolean = False
     Public UnIdentified As Boolean = False

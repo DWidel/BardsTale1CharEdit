@@ -89,16 +89,10 @@ Partial Class Form1
         Me.nudBardSongsRmd = New System.Windows.Forms.NumericUpDown()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.btnHeal = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnAddItem = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.btnAddItem = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnHealAll = New System.Windows.Forms.Button()
-        Me.btnDelItem = New System.Windows.Forms.Button()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.dgvCB = New System.Windows.Forms.DataGridView()
-        Me.btnGetItem = New System.Windows.Forms.Button()
         Me.colIdx = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colEquip = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.colItemName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -109,6 +103,17 @@ Partial Class Form1
         Me.colStat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDmg = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colItmType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnHeal = New System.Windows.Forms.Button()
+        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.btnHealAll = New System.Windows.Forms.Button()
+        Me.btnDelItem = New System.Windows.Forms.Button()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.dgvCB = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -119,12 +124,7 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.btnGetItem = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.nudCStrength, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudMStrength, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,14 +152,14 @@ Partial Class Form1
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
         CType(Me.dgvCB, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRefresh
@@ -801,14 +801,23 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Character"
         '
-        'btnHeal
+        'btnSave
         '
-        Me.btnHeal.Location = New System.Drawing.Point(21, 19)
-        Me.btnHeal.Name = "btnHeal"
-        Me.btnHeal.Size = New System.Drawing.Size(42, 23)
-        Me.btnHeal.TabIndex = 56
-        Me.btnHeal.Text = "Heal"
-        Me.btnHeal.UseVisualStyleBackColor = True
+        Me.btnSave.Location = New System.Drawing.Point(72, 19)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(42, 23)
+        Me.btnSave.TabIndex = 58
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnAddItem
+        '
+        Me.btnAddItem.Location = New System.Drawing.Point(595, 15)
+        Me.btnAddItem.Name = "btnAddItem"
+        Me.btnAddItem.Size = New System.Drawing.Size(83, 23)
+        Me.btnAddItem.TabIndex = 57
+        Me.btnAddItem.Text = "Add New Item"
+        Me.btnAddItem.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
@@ -834,80 +843,6 @@ Partial Class Form1
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(520, 206)
         Me.DataGridView1.TabIndex = 0
-        '
-        'btnAddItem
-        '
-        Me.btnAddItem.Location = New System.Drawing.Point(595, 15)
-        Me.btnAddItem.Name = "btnAddItem"
-        Me.btnAddItem.Size = New System.Drawing.Size(83, 23)
-        Me.btnAddItem.TabIndex = 57
-        Me.btnAddItem.Text = "Add New Item"
-        Me.btnAddItem.UseVisualStyleBackColor = True
-        '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(72, 19)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(42, 23)
-        Me.btnSave.TabIndex = 58
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
-        'btnHealAll
-        '
-        Me.btnHealAll.Location = New System.Drawing.Point(687, 18)
-        Me.btnHealAll.Name = "btnHealAll"
-        Me.btnHealAll.Size = New System.Drawing.Size(68, 23)
-        Me.btnHealAll.TabIndex = 57
-        Me.btnHealAll.Text = "Heal All"
-        Me.btnHealAll.UseVisualStyleBackColor = True
-        '
-        'btnDelItem
-        '
-        Me.btnDelItem.BackgroundImage = CType(resources.GetObject("btnDelItem.BackgroundImage"), System.Drawing.Image)
-        Me.btnDelItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnDelItem.Location = New System.Drawing.Point(805, 147)
-        Me.btnDelItem.Name = "btnDelItem"
-        Me.btnDelItem.Size = New System.Drawing.Size(58, 66)
-        Me.btnDelItem.TabIndex = 59
-        Me.btnDelItem.Text = "Cut Select Item"
-        Me.btnDelItem.UseVisualStyleBackColor = True
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Controls.Add(Me.dgvCB)
-        Me.GroupBox5.Location = New System.Drawing.Point(868, 12)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(536, 548)
-        Me.GroupBox5.TabIndex = 58
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Removed Item Clipboard"
-        '
-        'dgvCB
-        '
-        Me.dgvCB.AllowUserToAddRows = False
-        Me.dgvCB.AllowUserToDeleteRows = False
-        Me.dgvCB.AllowUserToResizeRows = False
-        Me.dgvCB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCB.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewCheckBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.DataGridViewCheckBoxColumn3, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.colType})
-        Me.dgvCB.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvCB.Location = New System.Drawing.Point(3, 16)
-        Me.dgvCB.Name = "dgvCB"
-        Me.dgvCB.RowHeadersVisible = False
-        Me.dgvCB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvCB.Size = New System.Drawing.Size(530, 529)
-        Me.dgvCB.TabIndex = 0
-        '
-        'btnGetItem
-        '
-        Me.btnGetItem.BackgroundImage = CType(resources.GetObject("btnGetItem.BackgroundImage"), System.Drawing.Image)
-        Me.btnGetItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnGetItem.Location = New System.Drawing.Point(803, 230)
-        Me.btnGetItem.Name = "btnGetItem"
-        Me.btnGetItem.Size = New System.Drawing.Size(63, 65)
-        Me.btnGetItem.TabIndex = 60
-        Me.btnGetItem.Text = "Paste Select Item"
-        Me.btnGetItem.UseVisualStyleBackColor = True
         '
         'colIdx
         '
@@ -978,6 +913,108 @@ Partial Class Form1
         Me.colItmType.ReadOnly = True
         Me.colItmType.Width = 55
         '
+        'btnHeal
+        '
+        Me.btnHeal.Location = New System.Drawing.Point(21, 19)
+        Me.btnHeal.Name = "btnHeal"
+        Me.btnHeal.Size = New System.Drawing.Size(42, 23)
+        Me.btnHeal.TabIndex = 56
+        Me.btnHeal.Text = "Heal"
+        Me.btnHeal.UseVisualStyleBackColor = True
+        '
+        'NumericUpDown6
+        '
+        Me.NumericUpDown6.Location = New System.Drawing.Point(64, 316)
+        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.NumericUpDown6.Name = "NumericUpDown6"
+        Me.NumericUpDown6.Size = New System.Drawing.Size(47, 20)
+        Me.NumericUpDown6.TabIndex = 18
+        '
+        'NumericUpDown5
+        '
+        Me.NumericUpDown5.Location = New System.Drawing.Point(129, 290)
+        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.NumericUpDown5.Name = "NumericUpDown5"
+        Me.NumericUpDown5.Size = New System.Drawing.Size(47, 20)
+        Me.NumericUpDown5.TabIndex = 16
+        '
+        'NumericUpDown4
+        '
+        Me.NumericUpDown4.Location = New System.Drawing.Point(64, 290)
+        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.NumericUpDown4.Name = "NumericUpDown4"
+        Me.NumericUpDown4.Size = New System.Drawing.Size(47, 20)
+        Me.NumericUpDown4.TabIndex = 14
+        '
+        'NumericUpDown3
+        '
+        Me.NumericUpDown3.Location = New System.Drawing.Point(129, 315)
+        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.NumericUpDown3.Name = "NumericUpDown3"
+        Me.NumericUpDown3.Size = New System.Drawing.Size(47, 20)
+        Me.NumericUpDown3.TabIndex = 20
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Location = New System.Drawing.Point(64, 342)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(47, 20)
+        Me.NumericUpDown2.TabIndex = 22
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(64, 367)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(47, 20)
+        Me.NumericUpDown1.TabIndex = 26
+        '
+        'btnHealAll
+        '
+        Me.btnHealAll.Location = New System.Drawing.Point(687, 18)
+        Me.btnHealAll.Name = "btnHealAll"
+        Me.btnHealAll.Size = New System.Drawing.Size(68, 23)
+        Me.btnHealAll.TabIndex = 57
+        Me.btnHealAll.Text = "Heal All"
+        Me.btnHealAll.UseVisualStyleBackColor = True
+        '
+        'btnDelItem
+        '
+        Me.btnDelItem.BackgroundImage = CType(resources.GetObject("btnDelItem.BackgroundImage"), System.Drawing.Image)
+        Me.btnDelItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnDelItem.Location = New System.Drawing.Point(805, 147)
+        Me.btnDelItem.Name = "btnDelItem"
+        Me.btnDelItem.Size = New System.Drawing.Size(58, 66)
+        Me.btnDelItem.TabIndex = 59
+        Me.btnDelItem.Text = "Cut Select Item"
+        Me.btnDelItem.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.dgvCB)
+        Me.GroupBox5.Location = New System.Drawing.Point(868, 12)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(536, 548)
+        Me.GroupBox5.TabIndex = 58
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Removed Item Clipboard"
+        '
+        'dgvCB
+        '
+        Me.dgvCB.AllowUserToAddRows = False
+        Me.dgvCB.AllowUserToDeleteRows = False
+        Me.dgvCB.AllowUserToResizeRows = False
+        Me.dgvCB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCB.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewCheckBoxColumn2, Me.DataGridViewTextBoxColumn4, Me.DataGridViewCheckBoxColumn3, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.colType})
+        Me.dgvCB.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvCB.Location = New System.Drawing.Point(3, 16)
+        Me.dgvCB.Name = "dgvCB"
+        Me.dgvCB.RowHeadersVisible = False
+        Me.dgvCB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvCB.Size = New System.Drawing.Size(530, 529)
+        Me.dgvCB.TabIndex = 0
+        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "#"
@@ -1047,53 +1084,16 @@ Partial Class Form1
         Me.colType.ReadOnly = True
         Me.colType.Width = 50
         '
-        'NumericUpDown1
+        'btnGetItem
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(64, 367)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(47, 20)
-        Me.NumericUpDown1.TabIndex = 26
-        '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(64, 342)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(47, 20)
-        Me.NumericUpDown2.TabIndex = 22
-        '
-        'NumericUpDown3
-        '
-        Me.NumericUpDown3.Location = New System.Drawing.Point(129, 315)
-        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(47, 20)
-        Me.NumericUpDown3.TabIndex = 20
-        '
-        'NumericUpDown4
-        '
-        Me.NumericUpDown4.Location = New System.Drawing.Point(64, 290)
-        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(47, 20)
-        Me.NumericUpDown4.TabIndex = 14
-        '
-        'NumericUpDown5
-        '
-        Me.NumericUpDown5.Location = New System.Drawing.Point(129, 290)
-        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(47, 20)
-        Me.NumericUpDown5.TabIndex = 16
-        '
-        'NumericUpDown6
-        '
-        Me.NumericUpDown6.Location = New System.Drawing.Point(64, 316)
-        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(47, 20)
-        Me.NumericUpDown6.TabIndex = 18
+        Me.btnGetItem.BackgroundImage = CType(resources.GetObject("btnGetItem.BackgroundImage"), System.Drawing.Image)
+        Me.btnGetItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnGetItem.Location = New System.Drawing.Point(803, 230)
+        Me.btnGetItem.Name = "btnGetItem"
+        Me.btnGetItem.Size = New System.Drawing.Size(63, 65)
+        Me.btnGetItem.TabIndex = 60
+        Me.btnGetItem.Text = "Paste Select Item"
+        Me.btnGetItem.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -1110,7 +1110,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.GroupBox3)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Bard's Tale I Character Editor"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.nudCStrength, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1141,14 +1141,14 @@ Partial Class Form1
         Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox5.ResumeLayout(False)
         CType(Me.dgvCB, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -1,5 +1,8 @@
 ﻿Public Class clsRefItem
 
+    'Class to hold an game item and the inherent information about the item. 
+    'Not information about how the item relates to a character.
+
     Public Type As String
     Public Index As Integer
     Public Name As String

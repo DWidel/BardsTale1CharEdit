@@ -23,8 +23,6 @@ Partial Class frmItems
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.DGV = New System.Windows.Forms.DataGridView()
-        Me.btnOK = New System.Windows.Forms.Button()
-        Me.cboType = New System.Windows.Forms.ComboBox()
         Me.colIdx = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colItemName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colAC = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -34,6 +32,8 @@ Partial Class frmItems
         Me.colDamage = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colSpecial = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnOK = New System.Windows.Forms.Button()
+        Me.cboType = New System.Windows.Forms.ComboBox()
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,25 +54,6 @@ Partial Class frmItems
         Me.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGV.Size = New System.Drawing.Size(939, 353)
         Me.DGV.TabIndex = 1
-        '
-        'btnOK
-        '
-        Me.btnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK
-        Me.btnOK.Location = New System.Drawing.Point(859, 415)
-        Me.btnOK.Name = "btnOK"
-        Me.btnOK.Size = New System.Drawing.Size(75, 23)
-        Me.btnOK.TabIndex = 2
-        Me.btnOK.Text = "OK"
-        Me.btnOK.UseVisualStyleBackColor = True
-        '
-        'cboType
-        '
-        Me.cboType.FormattingEnabled = True
-        Me.cboType.Location = New System.Drawing.Point(486, 12)
-        Me.cboType.Name = "cboType"
-        Me.cboType.Size = New System.Drawing.Size(121, 21)
-        Me.cboType.TabIndex = 3
         '
         'colIdx
         '
@@ -136,6 +117,25 @@ Partial Class frmItems
         Me.colType.HeaderText = "Type"
         Me.colType.Name = "colType"
         '
+        'btnOK
+        '
+        Me.btnOK.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnOK.Location = New System.Drawing.Point(859, 415)
+        Me.btnOK.Name = "btnOK"
+        Me.btnOK.Size = New System.Drawing.Size(75, 23)
+        Me.btnOK.TabIndex = 2
+        Me.btnOK.Text = "Add Item"
+        Me.btnOK.UseVisualStyleBackColor = True
+        '
+        'cboType
+        '
+        Me.cboType.FormattingEnabled = True
+        Me.cboType.Location = New System.Drawing.Point(486, 12)
+        Me.cboType.Name = "cboType"
+        Me.cboType.Size = New System.Drawing.Size(121, 21)
+        Me.cboType.TabIndex = 3
+        '
         'frmItems
         '
         Me.AcceptButton = Me.btnOK
@@ -146,7 +146,7 @@ Partial Class frmItems
         Me.Controls.Add(Me.btnOK)
         Me.Controls.Add(Me.DGV)
         Me.Name = "frmItems"
-        Me.Text = "frmItems"
+        Me.Text = "Available Items List"
         CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

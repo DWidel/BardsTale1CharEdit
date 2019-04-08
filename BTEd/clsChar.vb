@@ -1,5 +1,7 @@
 ﻿Public Class clsChar
 
+    'Information about a character as stored in the character file.
+
     Private Data(95) As Byte
 
     Public Sub New()
