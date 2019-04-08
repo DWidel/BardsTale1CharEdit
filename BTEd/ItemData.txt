@@ -1,0 +1,129 @@
+﻿'type,Item,AC,Wa,Pa,Ro,Ba,Hu,Mo,Co,Ma,So,Wi,Price,Dice,Dmg,Special
+0,,0,1,1,1,1,1,1,1,1,1,1,0
+x,Torch,0,1,1,1,1,1,1,1,1,1,1,5
+x,Lamp,0,1,1,1,1,1,1,1,1,1,1,15
+W,Broadsword,0,1,1,,1,1,,,,,,80,2d4,4
+W,Short Sword,0,1,1,1,1,1,,,,,,30,1d8,4
+W,Dagger,0,1,1,1,1,1,1,1,1,1,1,20,1d4,2
+W,War Axe,0,1,1,,1,1,,,,,,70,2d4,4
+W,Halbard,0,1,1,,,1,1,,,,,200,1d16,8
+W,Mace,0,1,1,1,1,1,1,,,,,60,1d8,4
+W,Staff,0,1,1,1,1,1,1,1,1,1,1,20,1d8,4
+S,Buckler,1,1,1,1,1,1,1,,,,1,40
+S,Tower Shield,2,1,1,,1,1,,,,,,100
+A,Leather Armor,2,1,1,1,1,1,1,,,,1,70
+A,Chain Mail,3,1,1,,1,1,,,,,,150
+A,Scale Armor,4,1,1,,1,1,,,,,,300
+A,Plate Armor,5,1,1,,,,,,,,,700
+A,Robes,1,1,1,1,1,1,1,1,1,1,1,40
+H,Helm,1,1,1,,1,1,,,,,,50
+G,Leather Glvs,1,1,1,1,1,1,1,,,,1,80
+G,Gauntlets,1,1,1,,,1,,,,,,40
+I,Mandolin,0,,,,1,,,,,,,130
+I,Harp,0,,,,1,,,,,,,130
+I,Flute,0,,,,1,,,,,,,130
+W,Mthr Sword,0,1,1,1,1,1,,,,,,300,2d4+1,5
+S,Mthr Shield,3,1,1,1,1,1,1,,,,,400
+A,Mthr Chain,4,1,1,,1,1,,,,,,500
+A,Mthr Scale,5,1,1,,1,1,,1,1,1,,900
+F,Samurai Fgn,0,1,1,1,1,1,1,1,1,1,1,500,,,Samurai
+A,Bracers [6],4,1,1,1,1,1,1,1,1,1,1,600
+W,Bardsword,0,,,,1,,,,,,,700,2d8+1,9,Unl Bard Songs
+I,Fire Horn,0,,,,1,,,,,,,1200,,,33-46 Group Damage
+M,Lightwand,0,,,,,,,1,1,1,1,1000,,,MAFL
+W,Mthr Dagger,0,1,1,1,1,1,1,1,1,1,1,200,1d4+1,3
+H,Mthr Helm,2,1,1,1,1,1,,,,,,300
+G,Mthr Gloves,2,1,1,1,1,1,,,,,1,400
+W,Mthr Axe,0,1,1,,1,1,1,,,,,300,2d4+1,5
+W,Mthr Mace,0,1,1,1,1,1,1,,,,,300,1d8,4
+A,Mthr Plate,6,1,1,,,,,,,,,2000
+F,Ogre Fgn,0,1,1,1,1,1,1,1,1,1,1,300,,,INOG
+I,Lak's Lyre,0,,,,1,,,,,,,1000,,,Unlimited Bard Songs
+R,Shield Ring,2,1,1,1,1,1,1,1,1,1,1,700,,,+2AC
+R,Dork Ring,0,1,1,1,1,1,1,1,1,1,1,100
+I,Fin's Flute,2,,,,1,,,,,,,1300,,,+2AC
+W,Kael's Axe,0,1,1,,1,1,,,,,,600,5d4+2,12,Poison
+W,Blood Axe,0,,,,,1,,,,,,700,6d4+2,14
+W,Dayblade,0,1,1,,1,1,,1,1,1,,400,3d8+1,13,MAFL
+W,Shield Staff,2,1,1,,,1,,1,1,1,1,1000,1d16+1,9,AC+2
+x,Elf Cloak,2,1,1,1,1,,,,,,1,500
+W,Hawkblade,0,1,1,,1,1,,,,,,600,3d8,12
+W,Admt Sword,0,1,1,,1,1,,,,,,500,2d4+2,6
+S,Admt Shield,4,1,1,,1,1,,,,,,500
+W,Admt Dagger,0,1,1,1,1,1,1,1,1,1,1,300,1d4+2,4
+H,Admt Helm,3,1,1,,1,1,,,,,,400
+G,Admt Gloves,3,1,1,,1,1,,,,,,500
+W,Admt Mace,0,1,1,1,1,1,,,,,,400,1d8+2,6
+W,Broom,0,,,,,,,1,1,1,1,600,1d4+2,4,MALE
+W,Pureblade,0,,1,,,,,,,,,600,2d16,16,FLAN
+M,Exorwand,0,,,,,,,1,1,1,1,1000,,,DISP
+x,Ali's Carpet,2,,,1,,,1,1,1,1,1,800,,,MALE
+x,Magic Mouth,0,,,1,,,,1,1,1,1,1200,,,AREN
+S,Luckshield,2,1,1,1,1,1,1,1,1,1,1,800,,,Hide in Shadows 100%
+F,Giant Fgn,0,1,1,1,1,1,1,1,1,1,1,400,,,War Giant
+A,Admt Chain,5,1,1,,1,1,,,,,,800
+A,Admt Scale,6,1,1,,,,,,,,,1200
+A,Admt Plate,7,1,,,,,,,,,,1600
+A,Bracers [4],6,,,1,1,1,1,1,1,1,1,1000
+S,Arcshield,3,1,1,1,1,1,1,,,,,2000,,,STFL
+S,Pure Shield,5,,1,,,,,,,,,2000
+W,Mage Staff,2,,,,,,,1,1,1,1,5000,3d8,12,AC+2 regen MP+1
+W,War Staff,0,1,,1,1,1,,1,1,1,1,6000,4d8,16
+W,Thief Dagger,0,,,1,,,,,,,,1100,5d4,10,Increases chances to hide.
+W,Soul Mace,0,,,,,1,,,,,1,1500,2d8+1,9,Possession
+W,Wither Staff,0,,,1,,1,1,,,,1,4000,3d4+2,8,Old
+W,Sorcerstaff,2,,,,,,,1,1,1,1,8000,3d4+3,9,AC+2 DIIL
+W,Sword of Pak,0,1,,,,1,,,,,,3000,3d8+2,14,LESU
+I,Heal Harp,0,,,,1,,,,,,,7000,,,WOHL
+I,Galt's Flute,0,,,,1,,,,,,,10000,,,INWO
+I,Frost Horn,0,,,,1,,,,,,,12000,,,52-59 Group Dmg
+W,Dmnd Sword,0,1,1,,,1,,,,,,1200,2d4+3,7
+S,Dmnd Shield,5,1,,,,,,,,,,1000
+W,Dmnd Dagger,0,1,1,1,1,,,,,,1,800,1d4+3,5
+H,Dmnd Helm,4,1,1,,,,,,,,,1100
+F,Golem Fgn,0,1,1,1,1,1,1,1,1,1,1,300,,,Golem
+F,Titan Fgn,0,1,1,1,1,1,1,1,1,1,1,600,,,Titan
+W,Conjurstaff,0,,,,,,,1,1,1,1,8000,3d4+2,8,Halves spell cost
+W,Arc's Hammer,0,1,1,,1,1,,,,,,4000,4d8+1,17,LERE
+W,Staff of Lor,0,,,,,,,1,1,1,,9000,5d4+1,11, REST Insanity
+W,Powerstaff,0,,,,,,,1,1,1,1,12000,3d8+1,13,WAST
+W,Mournblade,0,,,,,1,,,,,,4000,2d16+1,17,Level Drain
+S,Dragonshield,3,1,1,,,1,,,,,,15000,,,Freezes Group 53-67 dmg
+A,Dmnd Plate,8,1,,,,,,,,,,4000
+G,Wargloves,5,1,1,,1,,,,,,,3000
+H,Lorehelm,2,1,1,,1,,,,,,1,8000,,,SOSI
+M,Dragonwand,1,,,,,,,1,1,1,1,14000,,,42-43  Group Damage
+x,Kiels Compass,0,1,,1,1,1,1,1,1,1,1,6000,,,SCSI
+x,Speedboots,1,,,1,1,,1,1,1,1,1,2000,,,Aids party in fleeing
+I,Flame Horn,0,,,,1,,,,,,,20000,,,86-101 Group Dmg
+I,Truthdrum,0,,,,1,,,,,,,20000,,,DIIL
+I,Spiritdrum,0,,,,1,,,,,,,30000,,,LESU
+I,Pipes of Pan,2,,,,1,,,,,,,30000,,,+2AC/GRRE
+R,Ring of Power,0,,,,,,,1,1,1,1,40000,,,MIBL
+R,Deathring,1,,,,,1,,1,1,1,1,60000,,,+1AC ANDE
+S,Ybarrashield,3,1,1,,1,,,,,,,10000,,,YMCA
+W,Spectre Mace,0,1,,,,1,,,,,1,20000,3d8+5,17,Level Drain
+x,Dag Stone,0,,1,,,,,,,,,10000,,,LERE
+x,Arc's Eye,0,,,,,,,1,1,1,1,10000,,,SOSI
+M,Ogrewand,1,,,,,,,1,1,1,1,30000,,,INOG
+H,Spirithelm,3,1,,,,1,,,,,,50000,,,LESU
+F,Dragon Fgn,0,1,1,1,1,1,1,1,1,1,1,800,,,Dragon
+F,Mage Fgn,0,1,1,1,1,1,1,1,1,1,1,1000,,,Master Wizard
+R,Troll Ring,0,1,1,1,1,1,1,1,1,1,1,80000,,,+1HP Regen
+W,Troll Staff,0,1,,1,1,1,,1,1,1,1,100000,4d4+4,12,Regen HP+1
+x,Onyx Key,0,1,1,1,1,1,1,1,1,1,1,100000,,,Access to  Mangar's Tower
+W,Crystal Sword,0,1,1,,1,1,,,,,,500,2d16+1,17
+W,Stoneblade,0,1,,,,1,,,,,,70000,3d8+1,13,Stone
+H,Travelhelm,3,1,1,,1,,,,,,,10000,,,APAR
+W,Death Dagger,0,1,,1,1,1,1,,,,1,60000,3d4+3,9,Critical
+F,Mongo Fgn,0,1,1,1,1,1,1,1,1,1,1,1000,,,Mongo
+F,Lich Fgn,0,1,1,1,1,1,1,1,1,1,1,1200,,,Lich
+x,Eye,0,1,1,1,1,1,1,1,1,1,1,50000,,,Activate Tarjan's Statue
+x,Master Key,0,1,1,1,1,1,1,1,1,1,1,1200,,,Opens All Gates in Skara Brae
+M,WizWand,2,,,,,,,,,,1,120000,,,PRSU
+x,Silvr Square,1,1,1,1,1,1,1,1,1,1,1,1000
+x,Silvr Circle,1,1,1,1,1,1,1,1,1,1,1,1000
+x,Silvr Triang,1,1,1,1,1,1,1,1,1,1,1,1000
+F,Thor Fgn,0,1,1,1,1,1,1,1,1,1,1,2000,,,Thor
+F,Old Man Fgn,0,1,1,1,1,1,1,1,1,1,1,1500,,,Old Man
+W,Spectre Snare,8,1,,,1,1,,,,,1,200000,4d16+1,33,AC+8 SPBI Critical
